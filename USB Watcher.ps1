@@ -8,7 +8,7 @@ function Handle-USBInsertionEvent {
     
     [Console]::WriteLine("USB Drive Inserted - Drive Letter: $driveLetter")
     
-    $executablePath  = "C:\!PC_Setup\Script 2 v2.exe"
+    $executablePath  = "C:\!PC_Setup\USB Scanner.exe"
 
     if (Test-Path $executablePath -PathType Leaf) {
         [Console]::WriteLine("Running external executable: $executablePath")
